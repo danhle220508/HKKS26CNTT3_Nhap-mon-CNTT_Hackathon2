@@ -1,9 +1,9 @@
 # BÀI LÀM – HACKATHON 02
 
 - **Mã đề:** 05
-- **Họ tên:Lê Đức Anh**
-- **Lớp:CNTT3**
-- ** Link repository:https://github.com/danhle220508/HKKS26CNTT3_Nhap-mon-CNTT_Hackathon2 **
+- **Họ tên:**
+- **Lớp:**
+- ** Link repository: **
 - **Hệ điều hành (Windows/macOS):**
 
 ## 4.2. Thao tác máy tính cơ bản bằng CLI
@@ -12,84 +12,13 @@
 
 ```shell
 # Ghi lần lượt các lệnh đã chạy, mỗi lệnh một dòng
-pwd
-ls -Force
-mv .\quy_dinh_thue.txt .\docs\
-mkdir backup
-cp .\data\don_thue_thang_5.xlsx .\backup\
-rm .\temp_505.tmp
-cd .\logs\
-ls
-cd..
+
 ```
 
 ### Kết quả liệt kê toàn bộ dự án (Windows: Get-ChildItem -Recurse -Force; macOS: ls -aR)
 
 ```text
- Directory: C:\Users\AD\OneDrive\Documents\Downloads\thi cuoi mon\starter-kit\thue-do-cam-trai-webside
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        11/11/2026  10:53 AM                backup
-d-----        11/11/2026  10:52 AM                data
-d-----        11/11/2026  10:52 AM                docs
-d-----        11/11/2026  10:51 AM                evidence
-d-----        11/11/2026  10:52 AM                logs
-d-----         11/3/2026   7:07 AM                web
--a----         11/3/2026   7:07 AM             72 .env
--a----         11/3/2026   7:07 AM           2409 bai_lam.md
-
-
-    Directory: C:\Users\AD\OneDrive\Documents\Downloads\thi cuoi mon\starter-kit\thue-do-cam-trai-webside\backup
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----         11/3/2026   7:07 AM           6132 don_thue_thang_5.xlsx
-
-
-    Directory: C:\Users\AD\OneDrive\Documents\Downloads\thi cuoi mon\starter-kit\thue-do-cam-trai-webside\data
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----         11/3/2026   7:07 AM           6132 don_thue_thang_5.xlsx
-
-
-    Directory: C:\Users\AD\OneDrive\Documents\Downloads\thi cuoi mon\starter-kit\thue-do-cam-trai-webside\docs
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----         11/3/2026   7:07 AM            159 quy_dinh_thue.txt
-
-
-    Directory: C:\Users\AD\OneDrive\Documents\Downloads\thi cuoi mon\starter-kit\thue-do-cam-trai-webside\logs
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----         11/3/2026   7:07 AM            934 rental.log
-
-
-    Directory: C:\Users\AD\OneDrive\Documents\Downloads\thi cuoi mon\starter-kit\thue-do-cam-trai-webside\web
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----         11/3/2026   7:07 AM                images
--a----         11/3/2026   7:07 AM            582 app.js
--a----         11/3/2026   7:07 AM            534 index.html
--a----         11/3/2026   7:07 AM            460 style.css
-
-
-    Directory: C:\Users\AD\OneDrive\Documents\Downloads\thi cuoi mon\starter-kit\thue-do-cam-trai-webside\web\images
-
-
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
--a----         11/3/2026   7:07 AM           3090 logo-campgo.png
+ 
 
 ```
 
@@ -105,8 +34,7 @@ Get-Content .\logs\rental.log | Select-String "status=500" > .\logs\loi_500.txt
 ### 2 dòng đầu tiên trong logs/loi_500.txt
 
 ```text
-2026-05-28 08:17:12 POST /api/kho-do status=500
-2026-05-28 08:20:23 POST /api/thue-do status=500
+
 
 
 ```
@@ -114,7 +42,7 @@ Get-Content .\logs\rental.log | Select-String "status=500" > .\logs\loi_500.txt
 ### b) Lệnh đếm số dòng status=404 và kết quả
 
 ```shell
-(Get-Content .\logs\rental.log | Select-String "status=404").count
+
 
 ```
 
@@ -128,30 +56,13 @@ Get-Content .\logs\rental.log | Select-String "status=500" > .\logs\loi_500.txt
 ### Lệnh chạy (Windows: nếu dùng Phụ lục 2 thì ghi cả 2 lệnh)
 
 ```shell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
 .\tong_hop.ps1
 
 ```
 
 ### Nội dung file logs/tong_hop.txt
 
-```text
-=== BAO CAO SU CO WEBSITE ===
-
-2026-05-28 08:13:01 GET /combo-cu status=404
-2026-05-28 08:30:56 GET /images/leu-6.jpg status=404
-2026-05-28 08:33:07 GET /images/leu-6.jpg status=404
-2026-05-28 08:49:24 GET /combo-cu status=404
-
-
-
-
-Count    : 6
-Average  : 
-Sum      : 
-Maximum  : 
-Minimum  : 
-Property : 
 
 
 ```

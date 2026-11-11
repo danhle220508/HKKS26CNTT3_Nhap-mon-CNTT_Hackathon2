@@ -15,4 +15,4 @@ function hienThiBangGiaThue() {
   }
 }
 
-hienThiBangGiaThue();
+hienThiBangThue();
