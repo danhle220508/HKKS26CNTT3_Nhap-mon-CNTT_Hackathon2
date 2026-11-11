@@ -27,7 +27,7 @@
 ### a) Lệnh lọc các dòng status=500
 
 ```shell
-Get-Content .\logs\rental.log | Select-String "status=500" > .\logs\loi_500.txt
+
 
 ```
 
@@ -47,7 +47,7 @@ Get-Content .\logs\rental.log | Select-String "status=500" > .\logs\loi_500.txt
 ```
 
 ```text
-4
+
 
 ```
 
